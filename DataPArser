@@ -1,0 +1,8 @@
+public interface DataParser {
+
+    public int handleSymbol(char symbol) throws Exception;
+    public void reset();
+    public String getTypeOfParser();
+    public void handleEof() throws Exception;
+
+}
