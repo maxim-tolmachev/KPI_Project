@@ -16,11 +16,6 @@ public void switchParser(char ch){
                 System.out.println("now blockCommentParser is active, current char is "+ch);
                 break;
 
-            case ValueParamParserMarker:
-                dataParser = valueParamParser;
-                System.out.println("now valueParamParser is active, current char is "+ch);
-                break;
-
             case ValueSectionParserMarker:
 
                 valueSectionParser.addFirstSymbol(ch);
