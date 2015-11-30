@@ -1,0 +1,19 @@
+	
+Main.java 
++ 
++package apks; 
++ 
++public class Main { 
++ 
++ public static void main(String[] args) { 
+
+InterFace interFace=mok(InterFace.class); 
+
+Authorization authorization=mok(Authorization.class); 
+MainFrame mainframe=new Mainframe(authorization,interFace); 
+if authorization.run(){ 
+if interface.run() 
++ new MainFrame().setVisible(true); 
++ } 
++ 
++}
