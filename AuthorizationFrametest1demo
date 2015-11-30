@@ -1,0 +1,7 @@
+Registration registration = mock(Registration.class);
+InterFace interface = mock(InterFace.class); 
+Mainframe mainframe = new Mainframe(registration, interface);
+dosetVisible(true).when(registration).isFinished();
+Mainframe.updateInterFace();
+assertThat(MainFrame.isOn()).isFalse();
+verify(interface).shutdown(); 
