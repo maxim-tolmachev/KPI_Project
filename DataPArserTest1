@@ -1,0 +1,6 @@
+DataPArserTest test1 = new DataPArserTest();
+assertThat(test1.handleSymbol()).isChar();
+test1.reset();
+assertThat(test1.getTypeofParser()).isEqualTo(10);
+test1.reset();
+assertThat(test1.handleEof()).isChar(); 
